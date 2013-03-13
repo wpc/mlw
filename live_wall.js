@@ -1,6 +1,10 @@
 var mlw = ("object" == typeof exports) ? exports : {};
 
-mlw.feeds = (function() {
+if ("object" == typeof exports) {
+    jQuery = require('jquery');
+}
+
+mlw.feeds = (function($) {
     var extractURL = function(gridViewUrl) {
         var matches = gridViewUrl.match(/\/projects\/([^\/]+)/i);
         if(!matches) {
@@ -13,7 +17,7 @@ mlw.feeds = (function() {
     return {
         extractURL: extractURL
     }
-})();
+})(jQuery);
 
 
 if( "object" == typeof document ) {

@@ -1,3 +1,4 @@
+require('jquery')
 var mlw = require('./live_wall.js');
 
 exports.feeds = {
