@@ -1,0 +1,22 @@
+{
+  "name": "Mingle Live Wall",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Automatic update mingle card wall when other people moving card",
+  "icons": { "16": "icon.png",
+             "48": "icon.png",
+            "128": "icon.png" },
+  "content_scripts": [
+     {
+       "matches": ["<all_urls>"],
+       "js": [
+         "injections.js"
+       ]
+     }
+  ],
+  "web_accessible_resources": [
+      "jquery-1.9.1.min.js",
+      "live_wall.js"
+  ],
+  "permissions": []
+}
