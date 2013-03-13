@@ -1,0 +1,8 @@
+{
+    "name" : "mingle-live-wall",
+    "version" : "0.0.1",
+    "dependencies" : {
+        "nodeunit" : "0.7.4",
+        "jquery"   : "1.8.3"
+    }
+}
